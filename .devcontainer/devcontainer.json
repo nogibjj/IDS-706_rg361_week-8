@@ -39,7 +39,8 @@
 				"ms-python.vscode-pylance",
 				"github.copilot",
 				"ms-vscode.makefile-tools",
-				"mechatroner.rainbow-csv"
+				"mechatroner.rainbow-csv",
+				"rust-lang.rust-analyzer"
 			]
         }
     },
