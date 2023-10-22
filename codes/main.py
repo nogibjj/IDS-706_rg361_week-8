@@ -1,4 +1,8 @@
+"""
+Measure the time Taken to calculate factorial of 31
+"""
 import time
+
 def main():
     start = time.time()
     n = 31
