@@ -9,5 +9,13 @@ def compare():
     python_time = end - start
     print(f"Python execution time: {python_time:.3E} seconds")
 
+    #subprocess.call(["cd", "codes"])
+    
+    start = time.time()
+    subprocess.call(["cargo", "run"])
+    end = time.time()
+    rust_time = end - start
+    print(f"Rust execution time: {rust_time:.3E} seconds")
+
 if __name__ == "__main__":
     compare()

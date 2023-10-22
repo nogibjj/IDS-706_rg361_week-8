@@ -1,8 +1,8 @@
 fn main() {
-    let n = 4;
-    let mut fac = 1;
+    let n = 31;
+    let mut fac: u128 = 1;
     for i in 1..=n {
-        fac = fac * i;
-    print!("{}",fac)
+        fac *= i as u128;
     }
+    println!("{}", fac);
 }

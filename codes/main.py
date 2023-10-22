@@ -1,5 +1,5 @@
 def main():
-    n = 100000
+    n = 31
     fac = 1
     for i in range(1, n + 1):
         fac *= i
