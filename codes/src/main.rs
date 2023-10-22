@@ -1,4 +1,4 @@
-use std::time::{Instant};
+use std::time::Instant;
 // extern crate num_bigint;
 // extern crate num_traits;
 
@@ -10,9 +10,9 @@ fn main() {
     let n: u128 = 31;
     let mut _fac: u128 = 1;
     for i in 1..=n {
-        _fac = _fac * i;
+        _fac *= i;
     }
-  
+
     let duration = start.elapsed();
     print!("{}", duration.as_nanos());
 }
