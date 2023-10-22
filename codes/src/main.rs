@@ -1,8 +1,18 @@
+use std::time::{Instant};
+extern crate num_bigint;
+extern crate num_traits;
+
+use num_bigint::BigUint;
+use num_traits::{One};
+
 fn main() {
-    let n = 31;
-    let mut fac: u128 = 1;
+    let start = Instant::now();
+    let n: u16 = 1000;
+    let mut _fac: BigUint = One::one();
     for i in 1..=n {
-        fac *= i as u128;
+        _fac = _fac * i;
     }
-    println!("{}", fac);
+  
+    let duration = start.elapsed();
+    print!("{}", duration.as_micros());
 }

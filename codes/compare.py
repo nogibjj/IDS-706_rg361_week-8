@@ -12,7 +12,7 @@ def compare():
     #subprocess.call(["cd", "codes"])
     
     start = time.time()
-    subprocess.call(["cargo", "run"])
+    subprocess.call(["cargo", "run", "--quiet"])
     end = time.time()
     rust_time = end - start
     print(f"Rust execution time: {rust_time:.3E} seconds")
