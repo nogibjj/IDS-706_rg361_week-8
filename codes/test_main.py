@@ -39,7 +39,7 @@ def test_compare():
         f.write("## Python Execution Times:\n")
         # Print python times
         for i in range(len(python_times)):
-            f.write(f"Python Run {i+1} took: {python_times[i]:.2f} nano-seconds\n")
+            f.write(f"Python Run {i+1} took: {python_times[i]:.2f} nano-seconds\n" + "\n")
         # Print average
         f.write(
             f"Average Python Execution Time: {sum(python_times)/len(python_times):.2f} nano-seconds\n"  # noqa E501
