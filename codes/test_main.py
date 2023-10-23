@@ -52,7 +52,7 @@ def test_compare():
         f.write("## Rust Execution Times:\n")
         # Print rust times
         for i in range(len(rust_times)):
-            f.write(f"Rust Run {i+1} took: {rust_times[i]:.2f} nano-seconds\n"+ "\n")
+            f.write(f"Rust Run {i+1} took: {rust_times[i]:.2f} nano-seconds\n" + "\n")
         # Print average
         f.write(
             f"Average Rust Execution Time: {sum(rust_times)/len(rust_times):.2f} nano-seconds\n"  # noqa E501
@@ -62,7 +62,8 @@ def test_compare():
         # Compare
         f.write("## Comparison:\n")
         f.write(
-            f"Average difference in execution times: {sum(python_times)/len(python_times) - sum(rust_times)/len(rust_times):.2f} nano-seconds\n"+ "\n"  # noqa E501
+            f"Average difference in execution times: {sum(python_times)/len(python_times) - sum(rust_times)/len(rust_times):.2f} nano-seconds\n"  # noqa E501
+            + "\n"  # noqa E501
         )
         f.write(
             f"On an average Rust is {sum(python_times)/sum(rust_times):.2f} times faster than python\n"  # noqa E501
