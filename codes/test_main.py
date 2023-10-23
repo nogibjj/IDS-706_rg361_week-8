@@ -12,7 +12,8 @@ def test_compare():
     Compare Execution time of python and rust and log them
     """
     # set the working directory to codes
-    os.chdir("/workspaces/IDS-706_rg361_week-8/codes")
+    ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(ROOT_DIR)
 
     # set the log file
     log_file = "../summary.md"
